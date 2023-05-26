@@ -1,0 +1,28 @@
+.listItem {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--accent-dark);
+
+    & + & {
+      margin-top: 1.5em;
+    }
+  }
+
+  &__leftContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    height: 20px;
+    width: 20px;
+    margin-right: 0.5em;
+  }
+
+  &__title,
+  &__count {
+    font-weight: 600;
+  }
+}

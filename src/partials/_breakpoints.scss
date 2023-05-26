@@ -1,0 +1,7 @@
+@import "./variables";
+
+@mixin drawer_breakpoint() {
+  @media screen and (min-width: $drawer-breakpoint) {
+    @content;
+  }
+}

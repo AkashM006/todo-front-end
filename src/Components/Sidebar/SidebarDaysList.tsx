@@ -1,5 +1,5 @@
 import icons from "../../assets/icons";
-import "./SidebarDaysList.css";
+import "./SidebarDaysList.scss";
 import SidebarListItem from "./SidebarListItem";
 
 export interface DayListItem {

@@ -1,3 +1,5 @@
+@import "/src/partials/breakpoints";
+
 .sidebar__container {
   position: absolute;
   top: 0;
@@ -9,12 +11,23 @@
   transform: translateX(-100%);
   transition-property: transform;
   transition-duration: 0.5s;
+
+  @include drawer_breakpoint() {
+    position: relative;
+    flex: 1;
+    height: 100%;
+    transform: translateX(0);
+    border-right: 1px solid var(--bg-darker);
+  }
 }
 
 .hamburger__icon,
 .close__icon {
   height: 30px;
   width: 30px;
+  @include drawer_breakpoint() {
+    display: none;
+  }
 }
 
 .close__icon {
@@ -30,35 +43,20 @@
 
 .body__inner__container {
   height: 100%;
+
+  @include drawer_breakpoint() {
+    display: flex;
+  }
 }
 
 .content__container {
   padding: 1em 0.5em;
   background-color: var(--bg-light);
   height: 100%;
-}
 
-@media screen and (min-width: 850px) {
-  .body__inner__container {
-    display: flex;
-  }
-
-  .sidebar__container {
-    position: relative;
-    flex: 1;
-    height: 100%;
-    transform: translateX(0);
-    border-right: 1px solid var(--bg-darker);
-  }
-
-  .content__container {
+  @include drawer_breakpoint() {
     flex: 4;
     height: 100%;
     background-color: var(--bg-light);
-  }
-
-  .hamburger__icon,
-  .close__icon {
-    display: none;
   }
 }

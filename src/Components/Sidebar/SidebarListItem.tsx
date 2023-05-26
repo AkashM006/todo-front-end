@@ -1,4 +1,4 @@
-import "./SidebarListItem.css";
+import "./SidebarListItem.scss";
 
 interface ListItem {
   title: string;

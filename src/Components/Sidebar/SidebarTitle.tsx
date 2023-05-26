@@ -1,4 +1,4 @@
-import "./SidebarTitle.css";
+import "./SidebarTitle.scss";
 
 function SidebarTitle() {
   const user = {

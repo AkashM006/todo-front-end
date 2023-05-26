@@ -1,5 +1,5 @@
 import icons from "../../assets/icons";
-import "./SidebarContent.css";
+import "./SidebarContent.scss";
 import SidebarDaysList from "./SidebarDaysList";
 import SidebarListItem from "./SidebarListItem";
 import SidebarTitle from "./SidebarTitle";

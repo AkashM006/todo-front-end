@@ -1,0 +1,57 @@
+@import "/src/partials/breakpoints";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+.body {
+  background-color: var(--bg-light);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  @include drawer_breakpoint() {
+    background-color: var(--bg-dark);
+  }
+
+  &__container {
+    padding: 1em;
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+
+    @include drawer_breakpoint() {
+      border: 1px solid var(--bg-darker);
+      width: 95%;
+      padding: 0;
+      height: 95vh;
+      margin: 0 auto;
+      overflow-y: scroll;
+      max-width: 1440px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+    }
+  }
+}
+
+.light {
+  --bg-light: #ffffff;
+  --bg-dark: #f2f7f7;
+  --bg-darker: #c7c7cc;
+  --primary-clr: #007aff;
+  --accent-light: #ffffff;
+  --accent-dark: #131517;
+}
+
+.dark {
+  --bg-light: #1f2123;
+  --bg-dark: #1c1c1e;
+  --bg-darker: #48484a;
+  --primary-clr: #0a84ff;
+  --accent-light: #7c7c7c;
+  --accent-dark: #fefefe;
+}

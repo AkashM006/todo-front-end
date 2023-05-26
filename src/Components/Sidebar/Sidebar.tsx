@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { RootState } from "../../store";
-import "./Sidebar.css";
+import "./Sidebar.scss";
 import { useEffect, useState } from "react";
 import SidebarContent from "./SidebarContent";
 import icons from "../../assets/icons";
