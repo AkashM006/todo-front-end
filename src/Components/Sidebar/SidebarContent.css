@@ -1,0 +1,14 @@
+.bin__container {
+  margin-top: 3em;
+  margin-bottom: 0em;
+}
+
+.sidebarContent__container {
+  padding: 1em;
+}
+
+.border {
+  border: 0;
+  border-bottom: 1px solid var(--bg-darker);
+  margin-top: 0.5em;
+}
