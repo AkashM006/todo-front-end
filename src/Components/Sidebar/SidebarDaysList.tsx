@@ -35,7 +35,9 @@ function SidebarDaysList() {
     <div className="dayslist__container">
       {list.map((item) => (
         <SidebarListItem
-          icon={item.icon}
+          icon={
+            <img src={item.icon} alt={item.title} className="icon__container" />
+          }
           title={item.title}
           count={item.count}
           key={item.id}

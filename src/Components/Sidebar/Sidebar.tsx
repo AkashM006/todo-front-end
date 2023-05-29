@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { RootState } from "../../store";
 import "./Sidebar.scss";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import SidebarContent from "./SidebarContent";
 import icons from "../../assets/icons";
 
@@ -10,10 +10,6 @@ function Sidebar() {
   const { theme } = useSelector((state: RootState) => state.theme);
 
   const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {
-    console.log("Open status: ", isOpen);
-  }, [isOpen]);
 
   const closeIcon = theme === "dark" ? icons.ICON_CLOSE_DARK : icons.ICON_CLOSE;
   const menuIcon = theme === "dark" ? icons.ICON_MENU_DARK : icons.ICON_MENU;

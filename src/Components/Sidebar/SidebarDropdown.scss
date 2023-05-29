@@ -1,0 +1,39 @@
+.dropdown {
+  border-radius: 7px;
+  cursor: pointer;
+  padding-block: 0.5em;
+  &__title {
+    display: flex;
+    align-items: center;
+    &-content {
+      font-weight: 700;
+    }
+  }
+  &__content {
+    max-height: 0;
+    overflow: hidden;
+    transition-duration: 0.5s;
+    padding-left: 0.5em;
+  }
+  &__emoji {
+    margin-right: 0.25em;
+  }
+}
+.arrow {
+  margin-right: 0.5em;
+  transition-duration: 500ms;
+  transition-property: transform;
+  height: 15px;
+  aspect-ratio: 1;
+  transform: rotate(180deg);
+}
+
+.active {
+  & .dropdown__content {
+    max-height: 100vh;
+    margin-top: 1em;
+  }
+  & .arrow {
+    transform: rotate(270deg);
+  }
+}

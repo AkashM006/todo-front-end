@@ -15,6 +15,10 @@ const icons = {
     "https://firebasestorage.googleapis.com/v0/b/todo-14f67.appspot.com/o/pending.png?alt=media&token=2d222374-036b-48de-8a29-cbd602d40d66",
   ICON_BIN:
     "https://firebasestorage.googleapis.com/v0/b/todo-14f67.appspot.com/o/icon-bin.png?alt=media&token=009b872c-62b0-4afa-8588-e9693686f96d",
+  ICON_ARROW_LIGHT:
+    "https://firebasestorage.googleapis.com/v0/b/todo-14f67.appspot.com/o/arrow-light.png?alt=media&token=f15b73e7-a0ba-4785-8057-4e7b8a79c88c",
+  ICON_ARROW_DARK:
+    "https://firebasestorage.googleapis.com/v0/b/todo-14f67.appspot.com/o/arrow-dark.png?alt=media&token=0eef383d-7703-43d6-97cf-8b9e556a5f9d",
 };
 
 export default icons;
