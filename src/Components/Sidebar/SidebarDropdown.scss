@@ -7,6 +7,7 @@
     align-items: center;
     &-content {
       font-weight: 700;
+      color: var(--accent-dark);
     }
   }
   &__content {
@@ -28,12 +29,11 @@
   transform: rotate(180deg);
 }
 
-.active {
-  & .dropdown__content {
-    max-height: 100vh;
-    margin-top: 1em;
-  }
-  & .arrow {
-    transform: rotate(270deg);
-  }
+[data-toggle="true"] {
+  max-height: 100vh;
+  margin-top: 1em;
+}
+
+[data-rotate="true"] {
+  transform: rotate(270deg);
 }

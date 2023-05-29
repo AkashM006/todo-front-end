@@ -28,15 +28,18 @@ function SidebarDropdown({ title, listItems }: SidebarDropdownItem) {
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const classList = "dropdown" + (isOpen ? " active" : "");
-
   return (
-    <div className={classList} onClick={() => setIsOpen((prev) => !prev)}>
+    <div className="dropdown" onClick={() => setIsOpen((prev) => !prev)}>
       <div className="dropdown__title">
-        <img src={currentIcon} className="arrow" alt="Arrow" />
+        <img
+          src={currentIcon}
+          data-rotate={isOpen}
+          className="arrow"
+          alt="Arrow"
+        />
         <p className="dropdown__title-content">{title}</p>
       </div>
-      <div className="dropdown__content">
+      <div data-toggle={isOpen} className="dropdown__content">
         {listItems.map((item) => (
           <SidebarListItem
             title={item.name}
